@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ClientSVH.DataAccess.Entity
+namespace ClientSVH.PackagesDBCore.Entity
 { 
     public class Document
     {
@@ -11,7 +11,7 @@ namespace ClientSVH.DataAccess.Entity
         public DateTime ModifyDate { get; set; }
 
         public string? Number { get; set; }
-
+        public DateTime DocDate { get; set; }
         public string? ModeCode { get; set; }
         public int SizeDoc { get; set; }
         public string? Idmd5 { get; set; }   

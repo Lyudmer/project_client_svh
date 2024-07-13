@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClientSVH.DataAccess\ClientSVH.DataAccess.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ClientSVH.PackagesDBCore\ClientSVH.PackagesDBCore.csproj" />
   </ItemGroup>
 
 </Project>

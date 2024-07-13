@@ -1,13 +1,13 @@
-﻿using ClientSVH.DataAccess.Configurations;
-using ClientSVH.DataAccess.Entity;
+﻿using ClientSVH.PackagesDBCore.Configurations;
+using ClientSVH.PackagesDBCore.Entity;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ClientSVH.DataAccess
+namespace ClientSVH.PackagesDBCore
 {
     public class PackagesDBContext(DbContextOptions<PackagesDBContext> options):DbContext(options)
     {
-
+        public DbSet<User> Users { get; set; }
         public DbSet<Package> Packages { get; set; }
 
         public DbSet<Document> Document { get; set; }
@@ -15,8 +15,6 @@ namespace ClientSVH.DataAccess
         public DbSet<Status> Status { get; set; }
 
         public DbSet<StatusGraph> StatusGraph { get; set; }
-
-        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
