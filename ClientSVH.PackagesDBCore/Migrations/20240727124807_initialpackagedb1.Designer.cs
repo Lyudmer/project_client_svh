@@ -3,6 +3,7 @@ using System;
 using ClientSVH.PackagesDBCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ClientSVH.PackagesDBCore.Migrations
 {
     [DbContext(typeof(PackagesDBContext))]
-    partial class PackagesDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240727124807_initialpackagedb1")]
+    partial class initialpackagedb1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -22,6 +22,11 @@ namespace ClientSVH.PackagesDBCore.Configurations
                    .HasColumnName("did")
                    .HasColumnType("bigint");
 
+            builder.Property(d => d.DocId)
+                   .IsRequired()
+                   .ValueGeneratedOnAdd()
+                   .HasColumnName("docid");
+
             builder.Property(d => d.Pid)
                    .IsRequired()
                    .HasColumnName("pid");

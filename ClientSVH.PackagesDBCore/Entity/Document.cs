@@ -6,6 +6,7 @@ namespace ClientSVH.PackagesDBCore.Entity
     public class Document
     {
         public int Id { get; set; }
+        public Guid DocId { get; set; }
         public DateTime CreateDate { get; set; }
 
         public DateTime ModifyDate { get; set; }

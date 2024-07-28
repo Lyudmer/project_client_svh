@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mongodb1": {
+      "containerPorts": "27017:27017",
+      "secretStore": "LocalSecretsFile",
+      "containerName": "mongodb",
+      "containerImage": "mongo",
+      "type": "mongodb.container",
+      "connectionId": "docsbodydb",
+      "dynamicId": null
+    },
+    "cosmosdb1": {
+      "type": "cosmosdb.azure",
+      "connectionId": "ConnectionStrings:MongoDBContext"
+    }
+  }
+}

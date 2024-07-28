@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mongodb": {
+      "type": "mongodb",
+      "connectionId": "docsbodydb",
+      "dynamicId": null
+    },
+    "mongodb1": {
+      "type": "mongodb",
+      "connectionId": "docsbodydb",
+      "dynamicId": null
+    },
+    "cosmosdb1": {
+      "type": "cosmosdb",
+      "connectionId": "ConnectionStrings:MongoDBContext"
+    }
+  }
+}
